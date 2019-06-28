@@ -67,7 +67,7 @@ _____________________
 
 
 ### 代码
-####第一种单行用'''
+####第一种单行用反引号
 'String str =  new String();'
 
 ####第er种单行用'''
@@ -76,7 +76,8 @@ String str =  new String();
 String str =  new String();
 String str =  new String();
 '''
-###表格
+
+### 表格
 |name|age|sex|
 |:---:|:---:|:---:|
 |tony|20|men|
@@ -85,7 +86,7 @@ String str =  new String();
 ------|------
 name | age 
 
-###强调
+### 强调
 *斜体*
 
 ~~请删除我吧~~
