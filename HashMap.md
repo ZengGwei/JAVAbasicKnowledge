@@ -1,5 +1,16 @@
 #  HashMap源码
+## 1.数据结构
+* hashMap 数据结构是由 数组+链表（红黑树） 
+* 是由Node<K,V>[] 存储 ，相同index 就是链表结构，当链表>8 ,转换成红黑树
    
+        class Node<K,V> implements Map.Entry<K,V> {
+            final int hash;
+            final K key;
+             Node<K,V> next;
+            //get/set
+        }
+## 2.方法
+    putVal()    
 
 
 
