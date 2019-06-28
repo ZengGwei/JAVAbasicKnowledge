@@ -67,15 +67,15 @@ _____________________
 
 
 ### 代码
-####第一种单行用'''
-'String str =  new String();'
+####第一种 
+    String str =  new String(); 
 
 ####第er种单行用'''
-'''可以写注释
-String str =  new String();
-String str =  new String();
-String str =  new String();
-'''
+    
+    String str =  new String();
+    String str =  new String();
+    String str =  new String();
+
 ###表格
 |name|age|sex|
 |:---:|:---:|:---:|
