@@ -1,5 +1,10 @@
 import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.ConcurrentSkipListMap;
 
 /**
  * 〈〉
@@ -18,11 +23,28 @@ public class PryIntoHashMap {
             map.put("key"+i,"value"+i);
         }
 
+        System.out.println(map.get("key1"));
 
+        Map<String,Object> table  = new Hashtable<>();
+        for (int i = 0; i <10 ; i++) {
+            table.put("key"+1,"val"+i);
+        }
+        table.get("key1");
 
+        Map<String,Object> linkedHashMap = new LinkedHashMap();
+        for (int i = 0; i <10 ; i++) {
+            linkedHashMap.put("key"+1,"val"+i);//继承  hashMap  ,
 
+        }
+        linkedHashMap.get("key1");
 
+        Map<String,Object> concurrentHashMap = new ConcurrentHashMap<>() ;
 
+        Map<String,Object> skipListMap = new ConcurrentSkipListMap<>();
+        for (int i = 0; i <10 ; i++) {
+            skipListMap.put("key"+1,"val"+i);//继承  hashMap  ,
+        }
+        skipListMap.get("key1");
 
     }
 
